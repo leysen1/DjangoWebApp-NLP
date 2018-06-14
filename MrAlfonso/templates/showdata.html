@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<title>MR ALFONSO</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<style>
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+    background-image: url('http://www.masscommunicationtalk.com/wp-content/uploads/2016/02/writing-1.jpg');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+    filter: opacity(.8);
+}
+    td {
+        text-align: left;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 5px;
+        font-size: 16px;
+    }
+
+    
+</style>
+<body>
+
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-black">
+  <div class="w3-display-topleft w3-padding-large w3-xlarge">
+     
+  </div>
+  <div class="w3-display-middle w3-center">
+    <h1 class="w3-jumbo w3-animate-top">RESULTS</h1>
+    <div class="w3-center" style="background-color: white; padding: 30px; border-radius: 10px;" >
+       <form method="post" action="/getdata/" class = "w3-center">
+            <table >
+                <tr>
+                    <td>Anger</td>
+                    <td style= "text-align: right;"><strong>{{ anger }}%</strong></td>
+                </tr>
+                <tr>
+                    <td>Fear</td>
+                    <td style= "text-align: right;"><strong>{{ fear }}%</strong></td>
+                </tr>
+                <tr>
+                    <td>Joy</td>
+                    <td style= "text-align: right;"><strong>{{ joy }}%</strong></td>
+                </tr>
+                <tr>
+                    <td>Sadness</td>
+                    <td style= "text-align: right;"><strong>{{ sadness }}%</strong></td>
+                </tr>
+                <tr>
+                    <td>Analytical</td>
+                    <td style= "text-align: right;"><strong>{{ analytical }}%</strong></td>
+                </tr>
+                <tr>
+                    <td>Confident</td>
+                    <td style= "text-align: right;"><strong>{{ confident }}%</strong></td>
+                </tr>
+                <tr>
+                    <td>Tentative</td>
+                    <td style= "text-align: right;"><strong>{{ tentative }}%</strong></td>
+                </tr>
+                <tr>
+                    <td >Formality Score</td>
+                    <td style= "text-align: right;"><strong>{{ formal }}%</strong></td>
+                </tr>
+            </table>
+        </form>
+        
+    </div>
+      <br>
+    <form  action="." ><button type="submit" class="btn btn-info" style="background-color: black; border: none;">Restart</button></form>
+
+    
+  </div>
+
+</div>
+
+
+</body>
+</html>
